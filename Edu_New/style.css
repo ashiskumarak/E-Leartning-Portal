@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+*{
+    margin: 0;
+    padding: 0;
+    transition: all .2s;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+html{
+    font-size: 62%;
+    transition: .2s;
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+
+}
+.navbar{
+    position: absolute;
+    top: 100%;
+    background: rgb(107, 181, 107);
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+    right: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.navbar.active{
+    left: 0;
+}
+.navbar a{
+    display: block;
+    margin: .5rem;
+    padding: 1rem;
+    font-size: 3rem;
+    color: black;
+    font-weight: bolder;
+}
+.icons div{
+color: rgb(107, 181, 107);
+font-size: 2rem;
+margin-left:1rem;
+cursor: pointer;
+}
+/* ================================ */
+.user-login{
+    position: absolute;
+    top: 100%;
+    width: 35rem;
+    background: rgb(107, 181, 107);
+    height: 100vh;
+    left: -100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-login.active{
+    left:0;
+}
+.inner-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.inner-login input{
+    margin: 1rem;
+    width: 90%;
+    padding: 1rem 3rem;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 15px;
+    color: white;
+}
+.inner-login input::placeholder{
+    color: white;
+}
+.inner-login h1{
+    font-size: 25px;
+    text-transform: capitalize;
+    color: white;
+}
+
+/* ================================================================ */
+.main-background{
+    background: url(images/background.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-back-content{
+    text-align: center;
+}
+.inner-back-content h1{
+    color: black;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing:3px;
+    
+}
+.inner-back-content p{
+    font-size: 25px;
+    color: black;
+    margin-bottom:35px;
+    padding:0 50rem;
+}
+.inner-back-content a{
+    background: rgb(107, 181, 107);
+    padding: 1.5rem 4rem;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 15px;
+
+}
+
+/* ========================================================== */
+.education{
+    padding: 4rem 7%
+}
+.main-education
+{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 10px;
+
+}
+.inner-education{
+flex: 1 1 45rem;
+
+}
+.inner-education h1{
+    font-size: 30px;
+    margin-bottom: 20px; 
+}
+.inner-education p{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.inner-icons-edu{
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.inner-icons-edu h2{
+    margin-left: 30px;
+
+}
+/* ---------------------------------------------------------------------------------- */
+.features{
+    padding: 4rem 7%;
+    /* background:var(#06f46d); */
+    background-color: rgba(140, 152, 158, 0.179);
+}
+.features h1{
+    font-size: 30px;
+    font-weight: bold;
+    color:rgb(107, 181, 107);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main-features{
+display: flex;
+justify-content: center;
+align-items: center;
+gap:15x;
+flex-wrap: wrap;
+
+}
+.inner-features{
+    flex: 1 1 400px;
+    text-align: center;
+    padding:3rem 2rem;
+    margin:10px;
+    border: 1px solid rgb(107, 181, 107);
+}
+
+.inner-features img{
+    width: 35px;
+}
+.inner-features p{
+    font-size: 1.5rem;
+    margin:25px 10px;
+}
+
+/* -------------------------------- */
+.featureimg{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/* courses================================================================================================= */
+.courses{
+    padding: 4rem 7%;
+
+}
+.courses h1{
+    color:rgb(107, 181, 107);
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.main-courses{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+.inner-courses{
+    flex:1 1 300px;
+    width: 100%;
+  
+}
+.content-course
+{
+    background:rgba(140, 152, 158, 0.179);
+    width: 372px;
+    padding: 2rem 2rem;
+}
+.content-course h2{
+    font-size: 20px;
+    margin: 15px 0;
+}
+.content-course p{
+    font-size: 1.5rem;
+    margin:8px 0;
+}
+.content-course h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.content-course a{
+    padding: 1rem  3rem;
+    font-size: 1.5rem;
+    color: white;
+    background:rgb(107, 181, 107);
+}
+
+/* our teacher sections --------------------------------------------------------------------------------*/
+.our-teacher{
+    padding: 4rem 7%;
+    background:rgba(140, 152, 158, 0.179);
+}
+.our-teacher h1{
+color: rgb(107, 181, 107);
+font-size: 30px;
+text-align: center;
+margin-bottom: 20px;
+
+}
+.main-teachers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 37px;
+    flex-wrap: wrap;
+}
+.inner-teacher{
+    flex: 1 1 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner-content{
+    margin-left: 15px;
+}
+.inner-content h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+.inner-content h3{
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(107, 181, 107);
+}
+.gallery{
+    padding: 4rem 7%;
+
+}
+.gallery h1{
+    color: rgb(107, 181, 107);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main-galery{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.inner-gallery{
+    flex: 1 1 300px;
+    position: relative;
+}
+.galley-icons img{
+    width: 100%;
+    position: relative;
+}
+/* ======================================================================== footer */
+
+.area{
+    width: 100%;
+    height: 22vh;
+    background-color: #c4cac8;
+}
+.text{
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.text p{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+
+
+
+
+
